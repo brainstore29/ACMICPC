@@ -3,7 +3,7 @@ package algorithm;
 import java.util.Scanner;
 
 /*
- * N ¬Ô±‚ ( https://www.acmicpc.net/problem/2741 )
+ * N Ï∞çÍ∏∞ ( https://www.acmicpc.net/problem/2741 )
  */
 public class _2741 {
 	public static void main(String[] args) throws Exception{
