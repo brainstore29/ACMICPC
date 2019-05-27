@@ -21,7 +21,6 @@ public class _1912 {
 		} catch (Exception e) {
 			throw e;
 		}
-		
 	}
 
 	private static int contNumCheck(int[] arr) {
