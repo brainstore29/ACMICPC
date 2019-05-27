@@ -21,24 +21,17 @@ public class _1912 {
 		} catch (Exception e) {
 			throw e;
 		}
-		
 	}
 
 	private static int contNumCheck(int[] arr) {
-		int mostSum = 0, currentSum = 0;
-		for(int idx = 0; idx < arr.length; idx++) {
-			currentSum = 0;
-			for(int subIdx = idx; subIdx < arr.length; subIdx++) {
-				if(arr[subIdx] < 0) {
-					if(mostSum < currentSum) {
-						mostSum = currentSum;
-					}
-					break;
-				}
-				currentSum += arr[subIdx];
-			}
+		int[] indexSum = new int[arr.length + 1];
+		int mostSum = arr[0];
+		indexSum[0] = mostSum;
+		for(int idx = 1; idx < arr.length; idx++) {
+			indexSum[idx] = Math.max(indexSum[idx-1] + arr[idx], arr[idx]);
+			mostSum = Math.max(indexSum[idx],  mostSum);
 		}
+		
 		return mostSum;
 	}
-
 }
