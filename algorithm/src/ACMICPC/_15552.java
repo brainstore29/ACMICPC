@@ -1,4 +1,4 @@
-package algorithm;
+package ACMICPC;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

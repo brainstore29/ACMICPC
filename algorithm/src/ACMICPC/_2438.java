@@ -1,23 +1,23 @@
-package algorithm;
+package ACMICPC;
 
 import java.util.Scanner;
 
 /*
- * 구구단 ( https://www.acmicpc.net/problem/2739 )
+ * 별 찍기 - 1 ( https://www.acmicpc.net/problem/2438 )
  */
-public class _2739 {
+public class _2438 {
 	public static void main(String[] args) throws Exception{
 		try {
 			Scanner sc = new Scanner(System.in);
 			short inputNumber = sc.nextShort();
-			for(int idx = 1; idx < 10; idx++) {
-				System.out.println(inputNumber + " * " + idx + " = " + inputNumber*idx);
+			String star = "";
+			for(int idx = 1; idx <= inputNumber; idx++) {
+				star = star.concat("*");
+				System.out.println(star);
 			}
-			sc.close();
 		} catch (Exception e) {
 			throw e;
 		}
-		
 
 	}
 

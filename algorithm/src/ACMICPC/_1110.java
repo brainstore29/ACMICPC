@@ -1,4 +1,4 @@
-package algorithm;
+package ACMICPC;
 
 import java.util.Scanner;
 
